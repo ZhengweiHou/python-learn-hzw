@@ -6,7 +6,7 @@ from pika import spec
 
 import time
 
-credentials = pika.PlainCredentials('admin','admin')
+credentials= pika.PlainCredentials('admin','admin')
 
 parameters = pika.ConnectionParameters(host='192.168.32.131',credentials=credentials)
 

@@ -1,12 +1,13 @@
 #!/usr/bin/python
 # coding=utf-8
+
+import pika
+
 def send():
 
-    import pika
+    credentials = pika.credentials.PlainCredentials('admin', 'admin')
 
-    credentials = pika.credentials.PlainCredentials('admin','admin')
-
-    parameters = pika.ConnectionParameters(host='192.168.32.131',credentials=credentials)
+    parameters = pika.ConnectionParameters(host='192.168.32.131', credentials=credentials)
 
     connection = pika.BlockingConnection(parameters=parameters)
 
