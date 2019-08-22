@@ -15,7 +15,7 @@ while True:
 
      ecode_data = bytes(data1.encode(encoding='utf-8'))
 
-     print(ecode_data.__len__())
+     print("messageleng:%r"%ecode_data.__len__())
 
      if not data1:
          break
