@@ -11,3 +11,11 @@ for key in dir():
 
 
 
+import sys
+
+infos = dir(sys)
+
+print(infos)
+
+
+
