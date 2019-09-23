@@ -24,3 +24,5 @@ func1(1,2,3)
 a_dict = {'a':1,'b':2,'c':3}
 func1(**a_dict)  #相当于 func1(a=1,b=2,c=3)
 func1(a=1,b=2,c=3)
+
+
