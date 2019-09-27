@@ -40,6 +40,8 @@ print(s.__dict__)
 print(s.__class__.__dict__)
 
 
+
+
 class Clazz:
 
     name = 'Clazz'
