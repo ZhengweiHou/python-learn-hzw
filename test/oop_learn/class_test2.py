@@ -41,19 +41,3 @@ print(s.__class__.__dict__)
 
 
 
-
-class Clazz:
-
-    name = 'Clazz'
-    age = 111
-
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-clazz = Clazz('张三', 15)
-
-print(clazz.__dict__)
-# {'name': '张三', 'age': 15}
-print(clazz.__class__.__dict__)
-# {'__module__': '__main__', 'name': 'Clazz', 'age': 111, ...}
