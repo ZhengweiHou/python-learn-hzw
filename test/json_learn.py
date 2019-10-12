@@ -19,3 +19,6 @@ print(type(student),student.__dict__)   # <class '__main__.Student'> {'name': '�
 student_json = json.dumps(student.__dict__,ensure_ascii=False)  # ensure_ascii
 print(type(student_json),student_json)  # <class 'str'> {"name": "张三", "age": 15}
 
+
+from collections import Counter
+
