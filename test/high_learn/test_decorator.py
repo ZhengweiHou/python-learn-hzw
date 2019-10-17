@@ -8,7 +8,7 @@ def decorator_func(func):
 @decorator_func
 def func1(arg):
     print("func1",arg)
- 
+
 func1(5)
 
 # 等价于
