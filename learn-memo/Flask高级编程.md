@@ -21,4 +21,9 @@ pipenv install
 
 ### pycharm为项目配置虚拟环境
 
-![avatar](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194120.png)
+![1](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194120.png)
+![2](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194243.png)
+![3](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194636.png)
+![4](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194731.png)
+
+
