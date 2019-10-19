@@ -21,4 +21,4 @@ pipenv install
 
 ### pycharm为项目配置虚拟环境
 
-![avatar](https://www.baidu.com/img/bd_logo1.png?where=super)
+![avatar](https://github.com/ZhengweiHou/python-learn-hzw/blob/master/learn-memo/imgs/20191019194120.png)
