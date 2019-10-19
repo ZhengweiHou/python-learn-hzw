@@ -153,5 +153,51 @@ print(next(gen2))   # 再次next生成器会抛异常 StopIteration
 ```
 
 
+### 对象存在但if判断不一定是True
+不可以认为对象存在时if判断就是True
+``` python
+
+class A1():
+    pass
+
+class A2():
+    def __len__(self):
+        return 0
 
 
+print(bool(A1()))   # True
+print(bool(A2()))   # False
+print(bool(None))   # False
+```
+
+if判断对象是否为True和两个内置方法有关：
+- `__bool__(self)`
+- `__len__(self)`
+``` python
+class A3():
+    def __len__(self):
+        print('this is len')
+        return 1
+
+print(bool(A3()))
+# this is len
+# True
+
+class A4():
+    def __bool__(self):
+        print('this is bool')
+        return False
+
+    def __len__(self):
+        print('this is len')
+        return 1
+
+print(bool(A4()))
+# this is bool
+# False
+```
+
+
+### 装饰器的副作用
+被装饰函数name和注释被替换成装饰闭包函数    
+    >使用functools wraps装饰器解决
