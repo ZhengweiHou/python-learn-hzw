@@ -18,6 +18,8 @@
     cd project
     pipenv install
     ```
+- 查看虚拟环境地址
+`pipenv --venv
 - 进入虚拟环境    
 `pipenv shell`
 
