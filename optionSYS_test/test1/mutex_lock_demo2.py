@@ -1,29 +1,34 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-import _thread
 import threading
+import time
 
 lock = threading.Lock()
 num = 0
 
 def producer():
     global  num
-    times = 100000000
+
+    times = 1000000
     while times >0  :
-        lock.acquire()
-        num += 1
-        lock.release()
-        times -= 1
+        global lock
+        if lock.acquire():
+            num += 1
+            lock.release()
+            times -= 1
+    print('producer end!!')
 
 def comsumer():
     global num
-    times = 100000000
+    times = 1000000
     while times >0  :
-        lock.acquire()
-        num -= 1
-        lock.release()
-        times -= 1
+        global lock
+        if lock.acquire():
+            num -= 1
+            lock.release()
+            times -= 1
+    print('comsumer end!!')
 
 
 if __name__ == '__main__':
@@ -33,8 +38,7 @@ if __name__ == '__main__':
     p.start()
     c.start()
 
-    # p.join()
-    # c.join()
+    time.sleep(3)
     print('Print in mian function: num = %d' % num)
 
 
