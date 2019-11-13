@@ -48,17 +48,17 @@ def drawHeart_animation():
 
 
     def animate(i):
-        # print
-        i
-        # t = np.linspace(0, i / math.pi, 1000)
-        # x = np.sin(t)
-        # y = np.cos(t) + np.power(x, 2.0 / 3)
-        t = np.linspace(0, i, 1000)
-        y = 2 * (2 * np.cos(t) - np.cos(2 * t))
-        x = 2 * (2 * np.sin(t) - np.sin(2 * t))
+        t = np.linspace(0, i / math.pi, 1000)
+        x = 2*(np.sin(t))
+        y = 2*(np.cos(t) + np.power(x, 2.0 / 3))
+
+        # t = np.linspace(0, i, 1000)
+        # y = 2 * (2 * np.cos(t) - np.cos(2 * t))
+        # x = 2 * (2 * np.sin(t) - np.sin(2 * t))
 
         line1.set_data(x, y)
-        return line1
+        line2.set_data(-x, y)
+        return line1,line2
 
 
     ani = animation.FuncAnimation(figure, animate, init_func=init, frames=14, interval=200)
