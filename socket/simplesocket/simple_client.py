@@ -16,4 +16,5 @@ def client(i):
 
 
 if __name__ == '__main__':
-    client(1)
+    for i in range(10):
+        client(i)
